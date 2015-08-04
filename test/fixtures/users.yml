@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  texttime: 2015-08-03 11:49:55
+  phoneno: 1
+  rainpreference: MyString
+  textpreference: MyString
+
+two:
+  name: MyString
+  texttime: 2015-08-03 11:49:55
+  phoneno: 1
+  rainpreference: MyString
+  textpreference: MyString

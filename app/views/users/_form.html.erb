@@ -1,0 +1,40 @@
+<%= form_for(@user) do |f| %>
+  <% if @user.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@user.errors.count, "error") %> prohibited this user from being saved:</h2>
+
+      <ul>
+      <% @user.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :location %><br>
+    <%= f.select :location_id, options_for_select(Location.all.map{|l| [l.to_s, l.id]}) %>
+  <div class="field">
+    <%= f.label :text_time %><br>
+    <%= f.select :text_time, ['7:00', '7:30', '8:00', '8:30', '9:00', '9:30', '10:00', '10:30', '11:00', '11:30', '12:00', '12:30', '13:00', '13:30', '14:00', '14:30'] %>
+  </div>
+  <div class="field">
+    <%= f.label :phone_no %><br>
+    <%= f.text_field :phone_no %>
+  </div>
+  <div class="field">
+    <%= f.label :rain_preference %><br>
+    <%= f.select :rain_preference, ['Might Rain (10-39%)', 'Probably Will Rain (40-59%)', 'Most Likely Will Rain (60-100%)'] %>
+  </div>
+  <div class="field">
+    <%= f.label :text_preference %><br>
+    <%= f.select :text_preference, ['Default', 'Nagging Mum', 'Sarcastic Friend', 'Drill Sergeant'] %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
