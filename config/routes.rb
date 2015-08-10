@@ -1,8 +1,10 @@
 Rails.application.routes.draw do
-  resources :subscriptions
-  resources :assignments
+  root 'home#index'
+
   resources :locations
   resources :users
+
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
