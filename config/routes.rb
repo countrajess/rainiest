@@ -1,6 +1,5 @@
-Rails.application.routes.draw do 
-
-  resources :users, path: ''
+Rails.application.routes.draw do
+root 'users#new'
 
   resources :locations
   resources :users
