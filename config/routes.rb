@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-root 'users#new'
+  get '/auth/:provider/callback', to: 'home#create'
+
+  root 'home#index'
 
   resources :locations
   resources :users
