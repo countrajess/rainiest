@@ -1,0 +1,3 @@
+weather_update:
+  cron: "30 5 * * *"
+  class: "WeatherUpdater"

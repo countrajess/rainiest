@@ -25,11 +25,13 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'dotenv-rails', :require => 'dotenv/rails-now'
 gem 'wunderground'
+gem 'sidekiq'
+gem "sidekiq-cron", "~> 0.3.0"
+gem 'sinatra', require: nil
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
-# Use Unicorn as the app server
-# gem 'unicorn'
+gem 'puma'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
