@@ -26,14 +26,17 @@
     <%= f.label :phone_no %><br>
     <%= f.text_field :phone_no %>
   </div>
+<!--
   <div class="field">
-    <%= f.label :rain_preference %><br>
-    <%= f.select :rain_preference, ['Might Rain (10-39%)', 'Probably Will Rain (40-59%)', 'Most Likely Will Rain (60-100%)'] %>
+    <%#= f.label :rain_preference %><br>
+    <%#= f.select :rain_preference, ['Might Rain (10-39%)', 'Probably Will Rain (40-59%)', 'Most Likely Will Rain (60-100%)'] %>
   </div>
+-->
   <div class="field">
     <%= f.label :text_preference %><br>
     <%= f.select :text_preference, ['Default', 'Nagging Mum', 'Sarcastic Friend', 'Drill Sergeant'] %>
   </div>
+
   <div class="actions">
     <%= f.submit %>
   </div>
